@@ -1,0 +1,47 @@
+.filter-panel {
+  position: fixed;
+  top: 80px;
+  left: -260px; 
+  width: 240px;
+  height: calc(100vh-80px);
+  background: white;
+  padding: 20px;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+  border-right: 3px solid #fa8072;
+  transition: left 0.3s ease;
+  z-index: 150;
+}
+
+.filter-panel.show {
+  left: 0;
+}
+
+.close-btn {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.progress-box {
+  margin-top: 30px;
+  padding: 12px;
+  background: #fff8f6;
+  border: 2px solid #fa8072;
+  border-radius: 8px;
+}
