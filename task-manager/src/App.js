@@ -1,18 +1,21 @@
-import './App.css';
-import Header from './component/Header';
-import Router from './component/Routers';
+import "./App.css";
+import Header from "./component/Header";
+import Home from "./pages/Home";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ToastContainer position="top-right" autoClose={1500} />
-        <Header /> 
-        <Router />
-      </header>
-    </div>
+    <BrowserRouter>
+      <ToastContainer position="top-right" autoClose={1500} />
+
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
