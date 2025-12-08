@@ -78,14 +78,15 @@ function Home() {
 
 
     return (
-        <div className='home-container'>
 
-            <Header
-                openForm={() => setShowForm(true)}
-                toggleFilter={() => setShowFilter(true)}
-                search={searchBar}
-                setSearchBar={setSearchBar}
-            />
+        <Header
+            openForm={() => setShowForm(true)}
+            toggleFilter={() => setShowFilter(true)}
+            search={searchBar}
+            setSearchBar={setSearchBar}
+        />
+                
+        <div className='home-container'>
 
             <Filter
                 showFilter={showFilter}
