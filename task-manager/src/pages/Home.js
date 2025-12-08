@@ -78,7 +78,7 @@ function Home() {
 
 
     return (
-        <div>
+        <div className='home-container'>
 
             <Header
                 openForm={() => setShowForm(true)}
