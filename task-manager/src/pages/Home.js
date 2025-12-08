@@ -38,7 +38,6 @@ function Home() {
         }
     }, []);
 
-
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
     }, [tasks]);
@@ -76,9 +75,9 @@ function Home() {
         setShowForm(false);
     };
 
+    return (
+        <div className="home-container">
 
-    return (        
-        <div className='home-container'>
             <Header
                 openForm={() => setShowForm(true)}
                 toggleFilter={() => setShowFilter(true)}
@@ -97,6 +96,7 @@ function Home() {
                 completedTasks={completedTasks}
                 percentage={percentage}
             />
+
             {showForm && (
                 <TaskForm
                     addTask={addTask}
@@ -119,7 +119,9 @@ function Home() {
                 deleteTask={deleteTask}
             />
 
-            {showFilter && <div className="overlay" onClick={() => setShowFilter(false)} />}
+            {showFilter && (
+                <div className="overlay" onClick={() => setShowFilter(false)} />
+            )}
 
         </div>
     );
