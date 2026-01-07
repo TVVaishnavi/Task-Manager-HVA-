@@ -1,7 +1,6 @@
 import React from 'react';
 import '../style/Filter.css';
 
-
 function Filter({
   filterPriority, setFilterPriority,
   filterStatus, setFilterStatus,
@@ -20,11 +19,11 @@ function Filter({
       </select>
 
       <label>Status</label>
-      <select value={filterStatus} onChange={(e)=> setFilterStatus(e.target.value)}>
+      <select value={filterStatus} onChange={(e) => setFilterStatus(e.target.value)}>
         <option value="All">All</option>
         <option value="Pending">Pending</option>
         <option value="In Progress">In Progress</option>
-        <option value="Completed">Completed</option>
+        <option value="Completed">Completed</option> 
       </select>
 
       <div className="progress-box">
@@ -36,6 +35,5 @@ function Filter({
     </div>
   );
 }
-
 
 export default Filter;
