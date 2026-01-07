@@ -21,8 +21,8 @@
 }
 
 @keyframes popup{
-    from{transform: scale(0.9); opicity: 0;}
-    to{transform: scale(1); opicity: 1;}
+    from{transform: scale(0.9); opacity: 0;}
+    to{transform: scale(1); opacity: 1;}
 }
 
 .task-form-card h3{
