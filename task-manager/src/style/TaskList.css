@@ -4,105 +4,87 @@ ul{
 }
 
 .tasklist{
-    width: calc(100% - 40px);
+    width: 100%;
+    max-width: 1100px;         
     margin: 20px auto;
     text-align: center;
 }
 
 .title{
-    font-size: 17px;
-    margin-bottom: 6px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .empty-text{
     color: #666;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .task-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;                                      
     justify-content: center;
 }
 
 .task-grid > .task-card:nth-last-child(1):nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
-    width: 45%; 
+    width: 380px;          
 }
 
 .task-card{
     background: #fff;
-    padding: 14px;
+    padding: 14px;         
     border-radius: 8px;
     border: 2px solid #fa8072;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-out;
+    max-width: 380px;      
+    margin: 0 auto;
 }
 
 .task-card:hover{
-    transform: scale(1.03);
+    transform: scale(1.02); 
 }
 
 .task-title{
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 6px;
+    font-size: 17px;       
     font-weight: bold;
 }
 
-.badge{
-    padding: 4px 10px;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-}
-
-.low{
-    background-color: #4caf50;
-}
-
-.medium{
-    background-color: #ff9800;
-}
-
-.high{
-    background-color: #f44336;
-}
-
+.badge,
 .status{
-    padding: 4px 10px;
-    border-radius: 6px;
+    padding: 3px 8px;
+    border-radius: 8px;
     color: #fff;
     font-weight: bold;
+    font-size: 12px;
 }
 
-.pending{
-    background-color: #9e9e9e;
-}
+.low{ background-color: #4caf50; }
+.medium{ background-color: #ff9800; }
+.high{ background-color: #f44336; }
 
-.in-progress{
-    background-color: #2196f3;
-}
-
-.completed{
-    background-color: #4caf50;
-}
+.pending{ background-color: #9e9e9e; }
+.in-progress{ background-color: #2196f3; }
+.completed{ background-color: #4caf50; }
 
 .task-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     margin-top: 10px;
 }
 
 .edit-btn,
 .delete-btn {
-    padding: 6px 14px;
+    padding: 5px 10px;      
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -116,10 +98,7 @@ ul{
     color: white;
 }
 
-.edit-btn:hover {
-    opacity: 0.9;
-}
-
+.edit-btn:hover,
 .delete-btn:hover {
     opacity: 0.9;
 }
