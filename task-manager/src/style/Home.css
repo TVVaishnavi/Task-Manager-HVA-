@@ -1,8 +1,10 @@
 .home-container{
     padding-top: 80px;
     margin-left: 260px;
+    padding-left: 10px;
     box-sizing: border-box;
 }
+
 
 .overlay{
     position: fixed;
