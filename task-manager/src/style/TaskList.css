@@ -30,17 +30,17 @@ ul{
 .task-grid > .task-card:nth-last-child(1):nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
-    width: 380px;          
+    width: 440px;          
 }
 
 .task-card{
     background: #fff;
-    padding: 14px;         
+    padding: 18px;         
     border-radius: 8px;
     border: 2px solid #fa8072;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-out;
-    max-width: 380px;      
+    max-width: 440px;      
     margin: 0 auto;
 }
 
