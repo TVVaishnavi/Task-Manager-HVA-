@@ -4,7 +4,7 @@ ul{
 }
 
 .tasklist{
-    width: 80%;
+    width: calc(100% - 40px);
     margin: 20px auto;
     text-align: center;
 }
@@ -29,7 +29,7 @@ ul{
 .task-grid > .task-card:nth-last-child(1):nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
-    width: 60%; 
+    width: 45%; 
 }
 
 .task-card{
