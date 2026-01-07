@@ -9,7 +9,6 @@ import '../style/Home.css';
 function Home() {
     const [tasks, setTasks] = useState([]);
     const [showForm, setShowForm] = useState(false);
-    const [showFilter, setShowFilter] = useState(false);
     const [filterPriority, setFilterPriority] = useState("All");
     const [filterStatus, setFilterStatus] = useState("All");
     const [currentPage, setCurrentPage] = useState(1);
@@ -118,10 +117,6 @@ function Home() {
                 editTask={handleEdit}
                 deleteTask={deleteTask}
             />
-
-            {showFilter && (
-                <div className="overlay" onClick={() => setShowFilter(false)} />
-            )}
 
         </div>
     );
