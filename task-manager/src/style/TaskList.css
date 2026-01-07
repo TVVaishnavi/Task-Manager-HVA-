@@ -28,6 +28,7 @@ ul{
 
 .task-card{
     width: calc(50% - 12px);
+    max-width: 520px;
     background: #fff;
     padding: 22px;
     border-radius: 12px;
