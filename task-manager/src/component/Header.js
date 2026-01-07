@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../style/Header.css';
 
-function Header({ openForm, toggleFilter, searchBar, setSearchBar }){
+function Header({ openForm, searchBar, setSearchBar }){
     return(
         <div className='header'>
             <h1>Task Manager</h1>
