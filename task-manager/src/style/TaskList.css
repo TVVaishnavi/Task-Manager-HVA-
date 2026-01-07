@@ -5,43 +5,41 @@ ul{
 
 .tasklist{
     width: 100%;
-    max-width: 1100px;
     margin: 20px auto;
     text-align: center;
 }
 
 .title{
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .empty-text{
     color: #666;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .task-grid{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-content: stretch;
 }
 
 .task-grid > .task-card:nth-last-child(1):nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
-    width: 440px;
+    width: 60%;
 }
 
 .task-card{
     background: #fff;
-    padding: 18px;
-    border-radius: 10px;
+    padding: 22px;
+    border-radius: 12px;
     border: 2px solid #fa8072;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-out;
-    max-width: 440px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .task-card:hover{
@@ -49,18 +47,18 @@ ul{
 }
 
 .task-title{
-    margin-bottom: 8px;
-    font-size: 19px;
+    margin-bottom: 10px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .badge,
 .status{
-    padding: 4px 10px;
-    border-radius: 10px;
+    padding: 5px 12px;
+    border-radius: 12px;
     color: #fff;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .low{
@@ -90,15 +88,15 @@ ul{
 .task-buttons{
     display: flex;
     justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
+    gap: 14px;
+    margin-top: 14px;
 }
 
 .edit-btn,
 .delete-btn{
-    padding: 6px 12px;
+    padding: 8px 14px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
