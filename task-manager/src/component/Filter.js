@@ -27,7 +27,7 @@ function Filter({
       </select>
 
       <div className="progress-box">
-        <h4>Progress overview</h4>
+        <h4>Progress Tracker</h4>
         <p>Total Tasks: {totalTasks}</p>
         <p>Completed Tasks: {completedTasks}</p>
         <p>Percentage: {percentage}%</p>
