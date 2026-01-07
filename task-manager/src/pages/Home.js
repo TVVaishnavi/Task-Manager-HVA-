@@ -79,14 +79,11 @@ function Home() {
 
             <Header
                 openForm={() => setShowForm(true)}
-                toggleFilter={() => setShowFilter(true)}
                 search={searchBar}
                 setSearchBar={setSearchBar}
             />
 
             <Filter
-                showFilter={showFilter}
-                closeFilter={() => setShowFilter(false)}
                 filterPriority={filterPriority}
                 setFilterPriority={setFilterPriority}
                 filterStatus={filterStatus}
