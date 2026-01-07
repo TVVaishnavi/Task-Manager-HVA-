@@ -10,8 +10,8 @@ ul{
 }
 
 .title{
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin-bottom: 6px;
 }
 
 .empty-text{
@@ -34,9 +34,9 @@ ul{
 
 .task-card{
     background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid #fa8072;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid #fa8072;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-out;
 }
